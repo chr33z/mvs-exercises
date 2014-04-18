@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MVS Übung 1</string>
+    <string name="service_download_name">MVS Download Service</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="service_description">Durch klicken auf den Button \'Go!\' starten Sie den download von fünf Bildern aus dem Internet. Die Bilder werden anschließend hier gezeigt.</string>
+    <string name="label_downloads">Downloads:</string>
+    
+    <string name="button_start_downloads">Go!</string>
+    <string name="button_kill_app">Kill!</string>
+    <string name="button_action_back">Back</string>
+
+</resources>
