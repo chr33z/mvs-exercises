@@ -103,7 +103,8 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				moveTaskToBack(true);
+				System.exit(0); // you should really not do that
+				//moveTaskToBack(true);
 			}
 		});
 	}
