@@ -89,6 +89,11 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
+				
+				/*
+				 * one press starts the downloads and another press 
+				 * resets the views
+				 */
 				if(!serviceStartet){
 					startService();
 					serviceStartet = true;

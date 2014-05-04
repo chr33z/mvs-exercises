@@ -56,6 +56,10 @@ public class DownloadService extends Service {
 	}
 
 	private void downloadInBackground(){
+		/*
+		 * The links to the images are hardcoded in the service. To bin the images to
+		 * the right image views we pass the view ids here as well
+		 */
 		downloadResourceInBackground(imageUrl1, R.id.dl_image_1, R.id.dl_progressbar_1);
 		downloadResourceInBackground(imageUrl2, R.id.dl_image_2, R.id.dl_progressbar_2);
 		downloadResourceInBackground(imageUrl3, R.id.dl_image_3, R.id.dl_progressbar_3);
@@ -73,6 +77,13 @@ public class DownloadService extends Service {
 
 					HttpURLConnection connection = (HttpURLConnection) url
 							.openConnection();
+					
+					/*
+					 * Instead of somehow passing the picture data with the content
+					 * we store the images on the device together with the application.
+					 * To identifiy them later, we send the name of the imagefile back 
+					 * to the receiver which can load the files from the storage
+					 */
 					writeInputStream(connection.getInputStream(), fileName);
 
 					sendDownloadBroadcast(fileName, imageViewId, progressBarId);

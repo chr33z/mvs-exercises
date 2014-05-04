@@ -53,3 +53,7 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+## Other
+# Zip files for uniworx
+*.zip

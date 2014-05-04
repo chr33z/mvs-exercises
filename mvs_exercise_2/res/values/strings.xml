@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mvs_exercise_2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="map_your_position">Your position!</string>
+    
+    <string name="button_google_map">Google Map</string>
+    <string name="button_gps_activity">GPSActivity</string>
+    
+    <string name="title_activity_gps">GPSActivity</string>
+
+</resources>
